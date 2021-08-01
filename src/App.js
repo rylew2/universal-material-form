@@ -1,9 +1,8 @@
-import React from "react";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import React from "react";
 import AppBar from "./components/AppBar";
-import ToggleTheme from "./components/ToggleTheme";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,23 +11,23 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
     padding: theme.spacing(0, 0),
     margin: { margin: "0px" },
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   main: {
     marginTop: theme.spacing(0),
     marginBottom: theme.spacing(2),
     padding: theme.spacing(0, 0),
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   footer: {
     padding: theme.spacing(2, 2),
     marginTop: "auto",
-    backgroundColor: theme.palette.primary.main
+    backgroundColor: theme.palette.primary.main,
     // color: theme.palette.primary.contrastText
   },
   header: {
-    paddingBottom: "2px"
-  }
+    paddingBottom: "2px",
+  },
 }));
 
 export default function App() {
@@ -47,9 +46,7 @@ export default function App() {
           </Typography>
         </Container>
       </Container>
-      <Container className={classes.footer}>
-        <ToggleTheme />
-      </Container>
+      <Container className={classes.footer} />
     </Container>
   );
 }

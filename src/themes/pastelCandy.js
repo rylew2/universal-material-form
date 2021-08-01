@@ -4,11 +4,11 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const pastelCandy = createMuiTheme({
 	palette: {
 		primary: {
-			main: '#bdb2ff',
-			contrastText: '#caffbf'
+			main: '#8d9ae4',
+			contrastText: '#2a2b2a'
 		},
 		background: {
-			default: '#caffbf'
+			default: '#e0d595'
 		},
 		text: {
 			primary: '#25439a'
